@@ -1,20 +1,50 @@
 {
-  "name": "bindle-main",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "next": "9.0.5",
-    "react": "16.9.0",
-    "react-dom": "16.9.0"
-  },
-  "devDependencies": {
-    "@types/node": "^12.7.3",
-    "@types/react": "^16.9.2",
-    "typescript": "^3.6.2"
-  }
+	"name": "bindle-main",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "eslint . --ext=js,ts,tsx",
+		"lint:fix": "eslint . --ext=js,ts,tsx --fix"
+	},
+	"lint-staged": {
+		"*.{js,css,json,md}": [
+			"prettier --write",
+			"git add"
+		],
+		"*.{js,ts,tsx}": [
+			"prettier --write",
+			"eslint --fix",
+			"git add"
+		]
+	},
+	"git": {
+		"scripts": {
+			"commit-msg": "./scripts/commit-msg $1",
+			"pre-commit": "./node_modules/.bin/lint-staged"
+		}
+	},
+	"dependencies": {
+		"chalk": "^2.4.2",
+		"lint-staged": "^9.2.5",
+		"next": "9.0.5",
+		"react": "16.9.0",
+		"react-dom": "16.9.0"
+	},
+	"devDependencies": {
+		"@types/node": "^12.7.3",
+		"@types/react": "^16.9.2",
+		"@typescript-eslint/eslint-plugin": "^2.0.0",
+		"@typescript-eslint/parser": "~2.0.0",
+		"eslint": "^6.3.0",
+		"eslint-config-prettier": "~6.1.0",
+		"eslint-plugin-jsx-a11y": "^6.2.3",
+		"eslint-plugin-react": "~7.14.3",
+		"eslint-plugin-react-hooks": "~2.0.1",
+		"git-scripts": "^0.2.1",
+		"prettier": "^1.18.2",
+		"typescript": "^3.6.2"
+	}
 }
