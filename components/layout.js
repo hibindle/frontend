@@ -1,15 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import { createGlobalStyle } from 'styled-components'
-import { normalize } from 'styled-normalize'
-import { Header } from '../_shared'
-
-export const GlobalStyle = createGlobalStyle`
-  ${normalize}
-  body {
-   font-family: 'IBM Plex Sans', sans-serif;
-  }
-`
+import { Header, GlobalStyle } from '../_shared'
 
 const Layout = ({ children, title }) => (
 	<>
