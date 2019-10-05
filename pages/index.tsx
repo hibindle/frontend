@@ -3,11 +3,12 @@ import Link from 'next/link'
 import Layout from '../components/layout'
 // import { Overlay, Pen} from '@bindle/library'
 // import { Overlay, Pen } from '../_shared'
+const renderCopy = useCopy('index')
 
 const Home = () => (
 	<Layout title={'Home'}>
 		<div className="hero">
-			<h1 className="title">Welcome to Next.js!</h1>
+			<h1 className="title">{renderCopy('title.cta')}</h1>
 			<p className="description">
 				To get started, edit <code>pages/index.js</code> and save to
 				reload.
