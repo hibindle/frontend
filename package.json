@@ -5,7 +5,7 @@
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
-		"start": "next start",
+		"start": "yarn build && next start",
 		"lint": "eslint . --ext=js,ts,tsx",
 		"lint:fix": "eslint . --ext=js,ts,tsx --fix"
 	},
@@ -27,14 +27,21 @@
 		}
 	},
 	"dependencies": {
-		"@bindle/library": "latest",
+		"@bindle/library": "~1.0.11",
+		"@chakra-ui/core": "~0.4.0",
+		"@emotion/core": "~10.0.21",
+		"@emotion/styled": "~10.0.17",
+		"@storybook/addon-actions": "~5.2.4",
+		"@storybook/react": "~5.2.4",
 		"chalk": "^2.4.2",
+		"emotion-theming": "~10.0.19",
 		"lint-staged": "^9.2.5",
 		"next": "9.0.5",
 		"react": "16.9.0",
 		"react-bootstrap": "^1.0.0-beta.12",
 		"react-dom": "16.9.0",
 		"react-google-font-loader": "^1.0.5",
+		"storybook": "~5.1.11",
 		"styled-components": "^4.3.2"
 	},
 	"devDependencies": {
@@ -49,7 +56,7 @@
 		"eslint-plugin-react": "~7.14.3",
 		"eslint-plugin-react-hooks": "~2.0.1",
 		"git-scripts": "^0.2.1",
-		"polished": "^3.4.1",
+		"polished": "~3.4.1",
 		"prettier": "^1.18.2",
 		"styled-normalize": "^8.0.6",
 		"typescript": "^3.6.2"
