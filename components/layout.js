@@ -1,10 +1,9 @@
 import React from 'react'
 import Head from 'next/head'
-import { Header, GlobalStyle } from '../_shared'
+import { Header } from 'bindle'
 
 const Layout = ({ children, title }) => (
 	<>
-		<GlobalStyle />
 		<div>
 			<Head>
 				<link
@@ -14,6 +13,7 @@ const Layout = ({ children, title }) => (
 				<title>{title}</title>
 			</Head>
 			<Header />
+			{/* <Button>Hi</Button> */}
 			{children}
 		</div>
 	</>
