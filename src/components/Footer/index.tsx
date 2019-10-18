@@ -2,7 +2,7 @@ import React from 'react'
 import StyledFooter from './styles'
 
 interface Props {
-	children: any
+	children?: any
 }
 
 export const Footer: React.FunctionComponent<Props> = ({ children }) => {
