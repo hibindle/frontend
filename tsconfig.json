@@ -21,6 +21,7 @@
 			"@icons/*": ["./src/icons/*"],
 			"@illustrations/*": ["./src/illustrations/*"],
 			"Typography": ["./src/Typography/index.tsx"],
+			"@copy/*": ["./src/copy/*"],
 			"variables": ["./src/variables/index.ts"],
 			"@static/*": ["./static/*"],
 			"@higher-order-components/*": ["./higher-order-components/*"],
@@ -34,5 +35,5 @@
 		}
 	},
 	"exclude": ["node_modules"],
-	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.mdx"]
 }

@@ -10,7 +10,7 @@ interface Props {
 const Header: React.FunctionComponent<Props> = ({ navItems, btn }) => {
 	return (
 		<SCHeader>
-			<Logo />
+			<Logo width={'300px'} />
 			<SCHeaderContent>
 				{navItems} {btn}
 			</SCHeaderContent>

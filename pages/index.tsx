@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import Layout from '../src/components/layout'
+import Layout from '@components/layout'
 import useCopy from '../src/copy2context/useCopy'
 
 const Home = () => {
