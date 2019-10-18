@@ -1,8 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
 import Layout from '../components/layout'
-// import { Overlay, Pen} from '@bindle/library'
-// import { Overlay, Pen } from '../_shared'
 import useCopy from '../copy2context/useCopy'
 
 const Home = () => {
@@ -14,7 +12,7 @@ const Home = () => {
 				<p className="description">
 					To get started, edit <code>pages/index.js</code> and save to
 					reload.
-			</p>
+				</p>
 
 				<div className="row">
 					<Link href="https://github.com/zeit/next.js#setup">
@@ -23,7 +21,7 @@ const Home = () => {
 							<p>
 								Learn more about Next.js on GitHub and in their
 								examples.
-						</p>
+							</p>
 						</a>
 					</Link>
 					<Link href="https://github.com/zeit/next.js/tree/master/examples">
@@ -32,7 +30,7 @@ const Home = () => {
 							<p>
 								Find other example boilerplates on the Next.js
 								GitHub.
-						</p>
+							</p>
 						</a>
 					</Link>
 					<Link href="https://github.com/zeit/next.js">
@@ -41,7 +39,7 @@ const Home = () => {
 							<p>
 								Was this tool helpful? Let us know how we can
 								improve it!
-						</p>
+							</p>
 						</a>
 					</Link>
 				</div>
@@ -49,6 +47,5 @@ const Home = () => {
 		</Layout>
 	)
 }
-
 
 export default Home

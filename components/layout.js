@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import { Header } from 'bindle'
+import Header from '@components/Header'
 
 const Layout = ({ children, title }) => (
 	<>
