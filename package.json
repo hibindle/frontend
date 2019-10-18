@@ -10,8 +10,8 @@
 		"start": "yarn build && next start",
 		"lint": "eslint . --ext=js,ts,tsx",
 		"lint:fix": "eslint . --ext=js,ts,tsx --fix",
-		"illustrations": "node_modules/.bin/svgr -d illustrations illustrations  --ext=tsx",
-		"icons": "node_modules/.bin/svgr -d icons icons --icon --ext=tsx --replace-attr-values=#000=currentColor",
+		"illustrations": "node_modules/.bin/svgr -d src/illustrations src/illustrations  --ext=tsx",
+		"icons": "node_modules/.bin/svgr -d src/icons src/icons --icon --ext=tsx --replace-attr-values=#000=currentColor",
 		"svgs": "yarn icons && yarn illustrations",
 		"test": "echo \"Error: no test specified\" && exit 0"
 	},
@@ -40,7 +40,8 @@
 		"react-dom": "16.9.0",
 		"react-google-font-loader": "^1.0.5",
 		"storybook": "~5.1.11",
-		"styled-components": "^4.3.2"
+		"styled-components": "^4.3.2",
+		"tsconfig-paths-webpack-plugin": "~3.2.0"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.5.5",

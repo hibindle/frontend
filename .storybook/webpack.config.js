@@ -20,11 +20,11 @@ module.exports = ({ config }) => {
 	)
 	config.resolve.alias = {
 		...config.resolve.alias,
-		'@components': path.resolve(__dirname, '../components'),
-		'@icons': path.resolve(__dirname, '../icons'),
-		'@illustrations': path.resolve(__dirname, '../illustrations'),
-		Typography: path.resolve(__dirname, '../Typography/index.tsx'),
-		variables: path.resolve(__dirname, '../variables/index.ts'),
+		'@components': path.resolve(__dirname, '../src/components'),
+		'@icons': path.resolve(__dirname, '../src/icons'),
+		'@illustrations': path.resolve(__dirname, '../src/illustrations'),
+		Typography: path.resolve(__dirname, '../src/Typography/index.tsx'),
+		variables: path.resolve(__dirname, '../src/variables/index.ts'),
 		'~': path.resolve(__dirname, '../')
 	}
 	return config

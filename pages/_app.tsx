@@ -1,10 +1,10 @@
 import App from 'next/app'
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
-import { CopyProvider } from '../copy2context'
-import copy from '../copy/copy'
-import Theme from '../theme'
-import GlobalStyle from '../GlobalStyle'
+import { CopyProvider } from '../src/copy2context'
+import copy from '../src/copy/copy'
+import Theme from '../src/theme'
+import GlobalStyle from '../src/GlobalStyle'
 
 export default class MyApp extends App {
 	render() {
